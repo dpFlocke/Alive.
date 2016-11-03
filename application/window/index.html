@@ -11,15 +11,16 @@
 		});
 		//This is bad and i should feel bad... but im lazy. Sooo... global it is!
 		global.loggy = require('../js/utils/loggy.js');
-
-		require('../js/init');
 	</script>
 
 	<body>
 
 	<label>Canvas:</label>
 
-	<canvas id="canvas" width="200" height="200"/>
+	<canvas id="canvas"/>
 
 	</body>
+	<script type="text/javascript">
+		require('../js/init');
+	</script>
 </html>
