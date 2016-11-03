@@ -1,8 +1,6 @@
 'use strict';
 
 const observables = require('../js/store/observables.js');
-const loggy = require('../js/utils/loggy.js');
-
 
 let test1 = observables.source(
 {x:0, y:0}, 

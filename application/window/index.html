@@ -9,6 +9,9 @@
 				require('remote').getCurrentWindow().toggleDevTools();
 			} 
 		});
+		//This is bad and i should feel bad... but im lazy. Sooo... global it is!
+		global.loggy = require('../js/utils/loggy.js');
+
 		require('../js/init');
 	</script>
 
