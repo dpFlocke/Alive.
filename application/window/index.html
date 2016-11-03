@@ -6,20 +6,17 @@
 		
 		document.addEventListener("keydown", function (e) {
 			if (e.which === 123) {
-				console.log("before: " + JSON.stringify(require('remote').getCurrentWindow()));
 				require('remote').getCurrentWindow().toggleDevTools();
-				console.log("after: " + JSON.stringify(require('remote').getCurrentWindow()));
 			} 
 		});
-		var init = require('./js/init');
-		init.start();
+		require('../js/init');
 	</script>
 
 	<body>
 
 	<label>Canvas:</label>
 
-	<canvas id="firstCanvas" width="200" height="200"/>
+	<canvas id="canvas" width="200" height="200"/>
 
 	</body>
 </html>

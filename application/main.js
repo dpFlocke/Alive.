@@ -23,7 +23,7 @@ app.on('ready', function() {
     mainWindow = new BrowserWindow({width: 1200, height: 800});
 
     // and load the index.html of the app.
-    mainWindow.loadURL('file://' + __dirname + '/index.html');
+    mainWindow.loadURL('file://' + __dirname + '/window/index.html');
     // Emitted when the window is closed.
     mainWindow.on('closed', function() {
         // Dereference the window object, usually you would store windows
