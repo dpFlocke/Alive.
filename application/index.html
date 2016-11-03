@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript"> 
+		var $ = require('jquery');
+		require('remote').getCurrentWindow().toggleDevTools();
+		
+		document.addEventListener("keydown", function (e) {
+			if (e.which === 123) {
+				console.log("before: " + JSON.stringify(require('remote').getCurrentWindow()));
+				require('remote').getCurrentWindow().toggleDevTools();
+				console.log("after: " + JSON.stringify(require('remote').getCurrentWindow()));
+			} 
+		});
+		var init = require('./js/init');
+		init.start();
+	</script>
+
+	<body>
+
+	<label>Canvas:</label>
+
+	<canvas id="firstCanvas" width="200" height="200"/>
+
+	</body>
+</html>
